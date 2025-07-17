@@ -109,7 +109,7 @@ const Contact: React.FC<ContactProps> = ({ personalInfo }) => {
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      href: 'https://linkedin.com/in/devansh-pruthi',
+      href: 'https://www.linkedin.com/in/devansh-pruthi-79868-08084-software-engineer/',
       color: 'hover:text-blue-600',
     },
     // {

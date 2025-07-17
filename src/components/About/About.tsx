@@ -182,6 +182,7 @@ const About: React.FC<AboutProps> = ({ personalInfo }) => {
               className="inline-flex items-center space-x-4 px-8 py-4 rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <span className="text-lg font-medium">Ready to work together?</span>
               <motion.div

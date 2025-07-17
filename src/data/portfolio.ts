@@ -202,7 +202,7 @@ export const portfolioData: Portfolio = {
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/devansh-pruthi',
+      url: 'https://www.linkedin.com/in/devansh-pruthi-79868-08084-software-engineer/',
       icon: 'Linkedin'
     },
     // {
