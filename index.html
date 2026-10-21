@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devansh Pruthi · Full Stack Engineer (.NET, React & Fintech)</title>
+  <meta name="description" content="Devansh Pruthi is a full stack engineer with 4+ years of experience. He works at Instarails, a cross-border payments startup, and has integrated Stripe, Razorpay, Authorize.Net and Swirepay in .NET.">
+  <meta name="theme-color" content="#05070d">
+
+  <!-- Social share preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Devansh Pruthi · Full Stack Engineer">
+  <meta property="og:description" content="4+ years building fintech end to end with .NET and React. Moving money across borders at Instarails.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Devansh Pruthi",
+    "jobTitle": "Full Stack Engineer",
+    "worksFor": { "@type": "Organization", "name": "Instarails" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Mohali", "addressCountry": "IN" },
+    "email": "mailto:pruthidevansh@gmail.com",
+    "knowsAbout": [".NET", "C#", "React", "React Native", "Angular", "Payments", "Stripe", "Razorpay", "Authorize.Net", "Fintech"],
+    "sameAs": ["https://github.com/PruthiDevansh", "https://www.linkedin.com/in/devansh-pruthi-79868-08084-software-engineer/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ================= START SCREEN: choose how to view ================= -->
+  <div class="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title" hidden>
+    <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="gate-inner">
+      <p class="eyebrow"><span class="pulse"></span>Devansh Pruthi · Full Stack Engineer</p>
+      <h2 class="gate-title" id="gate-title">How would you like to <span class="grad">meet me?</span></h2>
+      <div class="gate-options">
+        <button class="gate-card gate-main" type="button" data-choice="interactive">
+          <span class="gate-icon" aria-hidden="true">✨</span>
+          <b>Interactive portfolio</b>
+          <span>The full experience: live demos, projects and animations.</span>
+          <em>~3 min</em>
+        </button>
+        <a class="gate-card" href="resume.html">
+          <span class="gate-icon" aria-hidden="true">📄</span>
+          <b>Professional resume</b>
+          <span>One clean page. Quick to scan, print or save as PDF.</span>
+          <em>~1 min</em>
+        </a>
+        <button class="gate-card" type="button" data-choice="play">
+          <span class="gate-icon" aria-hidden="true">🎮</span>
+          <b>Play: Payment Rush</b>
+          <span>A mini arcade game. Catch payments and unlock facts about me.</span>
+          <em>~2 min</em>
+        </button>
+      </div>
+      <button class="gate-skip" type="button" data-choice="interactive">Skip <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="#top" aria-label="Back to top">DP<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#play">Play</a></li>
+      </ul>
+      <a class="nav-resume" href="resume.html">Resume</a>
+      <a class="nav-cta magnetic" href="#contact">Let's talk</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top" aria-label="Introduction">
+      <canvas class="network" aria-hidden="true"></canvas>
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow load" style="--d:0"><span class="pulse"></span>Full Stack Engineer · .NET · React · Fintech</p>
+          <h1 class="hero-title">
+            <span class="line load" style="--d:1">I build products</span>
+            <span class="line load" style="--d:2">that <span class="grad">move money.</span></span>
+          </h1>
+          <p class="hero-sub load" style="--d:3">
+            Devansh Pruthi: 4+ years building software end to end. Today I'm at <b>Instarails</b>, a fintech startup that moves money across borders.
+            Right now: <span class="typed" aria-live="polite"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <div class="hero-actions load" style="--d:4">
+            <a class="btn btn-primary magnetic" href="#projects">See my work <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost magnetic" href="resume.html">View resume</a>
+          </div>
+          <ul class="hero-chips load" style="--d:5">
+            <li><b>4+</b> years</li>
+            <li><b>4</b> payment gateways</li>
+            <li><b>2</b> app stores shipped</li>
+          </ul>
+        </div>
+
+        <!-- Simulated "payments" terminal (not real data) -->
+        <div class="terminal load" style="--d:3" aria-label="Animated, simulated log of cross-border payment events">
+          <div class="terminal-head">
+            <i></i><i></i><i></i>
+            <span>payments-api · simulated</span>
+            <span class="live"><span class="pulse"></span>live</span>
+          </div>
+          <ol class="terminal-body" aria-hidden="true"></ol>
+          <div class="terminal-foot">
+            <span>gateways <b>4</b></span>
+            <span>p95 <b class="p95">48ms</b></span>
+            <span>double charges <b>0</b></span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Scroll to about"><span></span></a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-label="Technologies I use">
+      <div class="marquee-track">
+        <ul>
+          <li>C#</li><li>.NET Core</li><li>React</li><li>React Native</li><li>Angular</li><li>TypeScript</li><li>Stripe</li><li>Razorpay</li><li>Authorize.Net</li><li>Swirepay</li><li>SQL Server</li><li>Azure</li><li>AWS</li><li>Next.js</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>C#</li><li>.NET Core</li><li>React</li><li>React Native</li><li>Angular</li><li>TypeScript</li><li>Stripe</li><li>Razorpay</li><li>Authorize.Net</li><li>Swirepay</li><li>SQL Server</li><li>Azure</li><li>AWS</li><li>Next.js</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <p class="label reveal">01 / About</p>
+      <h2 class="section-title reveal" id="about-title">Full stack, with a payments engineer's <span class="grad">obsession for correctness.</span></h2>
+
+      <div class="bento">
+        <article class="tile tile-bio spot reveal">
+          <p>I'm a <strong>full stack engineer</strong> with <strong>4+ years</strong> of experience and a bachelor's degree in computer science. I build complete features: <strong>.NET Core</strong> APIs and databases on the backend, and <strong>React, React Native and Angular</strong> on the frontend.</p>
+          <p>Today I work at <strong>Instarails</strong>, a fintech startup that moves money internationally. Along the way I've integrated payment gateways like <strong>Stripe, Razorpay, Authorize.Net and Swirepay</strong>. In payments, a small bug can send real money to the wrong place.</p>
+          <p>Before that I built ERP systems, scheduling platforms and a mobile analytics app shipped to both app stores. Outside work, I build AI agents.</p>
+        </article>
+
+        <article class="tile tile-stat spot reveal">
+          <span class="stat-num"><span class="count" data-to="4">0</span>+</span>
+          <span class="stat-label">years shipping production software</span>
+        </article>
+
+        <article class="tile tile-clock spot reveal">
+          <span class="tile-kicker"><span class="pulse"></span>Mohali, India</span>
+          <span class="clock" aria-label="Current time in India">--:--</span>
+          <span class="stat-label">IST · open to remote</span>
+        </article>
+
+        <article class="tile tile-code spot reveal" aria-label="A short C# snippet describing Devansh">
+          <div class="code-head" aria-hidden="true"><i></i><i></i><i></i><span>Developer.cs</span></div>
+<pre><code><span class="k">public sealed record</span> <span class="t">Developer</span>
+{
+    <span class="k">public string</span> Name <span class="k">=&gt;</span> <span class="s">"Devansh Pruthi"</span>;
+    <span class="k">public string</span> Company <span class="k">=&gt;</span> <span class="s">"Instarails"</span>;
+    <span class="k">public string</span>[] Backend <span class="k">=&gt;</span> [<span class="s">"C#"</span>, <span class="s">".NET Core"</span>, <span class="s">"SQL"</span>];
+    <span class="k">public string</span>[] Frontend <span class="k">=&gt;</span> [<span class="s">"React"</span>, <span class="s">"React Native"</span>, <span class="s">"Angular"</span>];
+    <span class="c">// Correct first, then fast.</span>
+}</code></pre>
+        </article>
+
+        <article class="tile tile-now spot reveal">
+          <span class="tile-kicker">Currently</span>
+          <p>Moving money across borders at Instarails, and building AI agents on weekends.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section container" id="experience" aria-labelledby="exp-title">
+      <p class="label reveal">02 / Experience</p>
+      <h2 class="section-title reveal" id="exp-title">Where I've <span class="grad">shipped.</span></h2>
+
+      <ol class="timeline">
+        <!-- TODO: add your start date at Instarails, e.g. "2025 — Present" -->
+        <li class="t-item reveal">
+          <span class="t-dot" aria-hidden="true"></span>
+          <!-- TODO: add 2–3 bullets about what you actually build at Instarails -->
+          <div class="t-card spot">
+            <div class="t-top">
+              <h3>Full Stack Engineer <span>@ Instarails</span></h3>
+              <span class="t-date t-now"><span class="pulse"></span>Now</span>
+            </div>
+            <p class="t-desc">Fintech startup that moves money internationally.</p>
+            <ul class="points">
+              <li>Build full stack features for a cross-border payments platform, from .NET Core APIs and data models to React screens.</li>
+              <li>Design for correctness in money movement: idempotent APIs, safe retries and clear transaction states.</li>
+            </ul>
+            <ul class="tags"><li>C#</li><li>.NET Core</li><li>React</li><li>SQL Server</li><li>Fintech</li></ul>
+          </div>
+        </li>
+
+        <!-- TODO: add the end date at GiniLytics, e.g. "Jan 2023 — Mar 2025" -->
+        <li class="t-item reveal">
+          <span class="t-dot" aria-hidden="true"></span>
+          <div class="t-card spot">
+            <div class="t-top">
+              <h3>Software Engineer <span>@ GiniLytics IT Solutions</span></h3>
+              <span class="t-date">From Jan 2023</span>
+            </div>
+            <p class="t-desc">Mohali, Punjab · Web and mobile apps for clients.</p>
+            <ul class="points">
+              <li>Built and maintained scalable web applications with React.js and .NET Core, focusing on performance and user experience.</li>
+              <li>Developed, verified and shipped change requests across front-end and back-end, and met clients regularly to shape them.</li>
+              <li>Analyzed and resolved issues in requirements and designs, and tested thoroughly to improve reliability.</li>
+              <li>Worked on an ERP system, an appointment scheduling platform and a mobile analytics app (see projects below).</li>
+            </ul>
+            <ul class="tags"><li>React.js</li><li>.NET Core</li><li>C#</li><li>TypeScript</li><li>SQL Server</li><li>Entity Framework</li><li>Azure</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section container" id="projects" aria-labelledby="proj-title">
+      <p class="label reveal">03 / Projects</p>
+      <h2 class="section-title reveal" id="proj-title">Things I've <span class="grad">built.</span></h2>
+
+      <div class="filters reveal" role="group" aria-label="Filter projects">
+        <button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+        <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
+        <button type="button" class="filter" data-filter="ai" aria-pressed="false">AI</button>
+      </div>
+
+      <div class="work-grid">
+        <!-- LinkedIn AI Agent (featured) -->
+        <article class="project spot reveal" data-cat="ai">
+          <div class="project-copy">
+            <span class="tile-kicker">Side project · AI agent</span>
+            <h3>LinkedIn AI Agent</h3>
+            <p>An AI agent that runs my LinkedIn, with me in control. Every morning it finds trending news on the day's topic, writes a short post in my voice using only facts from the source, and asks me on Telegram what to do. It posts through the official LinkedIn API only after I tap ✅.</p>
+            <ol class="flow">
+              <li><b>01</b> Find trending news</li>
+              <li><b>02</b> Write the post with Gemini</li>
+              <li><b>03</b> Approve on Telegram</li>
+              <li><b>04</b> Publish to LinkedIn</li>
+            </ol>
+            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Gemini API</li><li>Telegram Bot API</li><li>LinkedIn API</li><li>Upstash Redis</li></ul>
+            <a class="btn btn-ghost magnetic" href="https://github.com/PruthiDevansh/linkedin-ai-agent" target="_blank" rel="noopener">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="phone tilt" aria-label="Example: the agent asking for approval on Telegram">
+            <div class="phone-head">
+              <span class="avatar" aria-hidden="true">🤖</span>
+              <div><b>LinkedIn Agent</b><small>bot · online</small></div>
+            </div>
+            <div class="chat">
+              <div class="bubble bot msg">
+                <small>Tue · New AI models</small>
+                <p><b>Draft ready:</b></p>
+                <p>"Everyone asks which AI model is the best. Wrong question. Ask which one is best for <i>your</i> task and budget. Here's how I pick…"</p>
+              </div>
+              <div class="chat-actions msg">
+                <span>✅ Post</span><span>✏️ Edit</span><span>🔄 New draft</span><span>❌ Skip</span>
+              </div>
+              <div class="bubble me msg">✅ Post</div>
+              <div class="bubble bot ok msg">Posted to LinkedIn ✓</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MetricHub -->
+        <article class="card-work spot reveal" data-cat="mobile">
+          <div class="viz viz-metric" aria-hidden="true">
+            <div class="mini-phone">
+              <div class="mp-top"><span>MetricHub</span><i></i></div>
+              <div class="mp-kpis">
+                <div><small>Revenue</small><b>₹4.2L</b><em>▲ 12%</em></div>
+                <div><small>Orders</small><b>1,284</b><em>▲ 8%</em></div>
+              </div>
+              <svg class="mp-chart" viewBox="0 0 200 80" preserveAspectRatio="none">
+                <defs><linearGradient id="mpFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2dd4bf" stop-opacity=".45"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></linearGradient></defs>
+                <path class="mp-area" d="M0 62 C20 58 30 40 50 44 S80 60 100 38 S140 20 160 26 S190 8 200 10 L200 80 L0 80Z" fill="url(#mpFill)"/>
+                <path class="mp-line" d="M0 62 C20 58 30 40 50 44 S80 60 100 38 S140 20 160 26 S190 8 200 10" fill="none" stroke="#2dd4bf" stroke-width="2.5"/>
+              </svg>
+              <div class="mp-bars"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:80%"></i><i style="--h:60%"></i><i style="--h:95%"></i></div>
+              <div class="mp-sync">● Offline · synced 2m ago</div>
+            </div>
+            <div class="store-badges"><span>App Store</span><span>▶ Google Play</span></div>
+          </div>
+          <div class="cw-body">
+            <span class="tile-kicker">Mobile · Shipped to both stores</span>
+            <h3>MetricHub: mobile analytics</h3>
+            <p>A cross-platform React Native app for tracking business metrics in real time, with offline sync, custom dashboards and push notifications for critical metrics.</p>
+            <ul class="tags"><li>React Native</li><li>.NET Core</li><li>SQL Server</li><li>TypeScript</li><li>Redux</li></ul>
+            <button type="button" class="details-btn">View details <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="details" hidden>
+            <h4>Overview</h4>
+            <p>MetricHub is a mobile analytics platform built with React Native that lets businesses track key performance metrics in real time. It has offline data sync, custom dashboards with live charts, and integrates with .NET backend services. It is published on both the App Store and Google Play.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Led development of the cross-platform app in React Native</li>
+              <li>Built offline data sync with conflict resolution</li>
+              <li>Built the custom dashboard with real-time data visualization</li>
+              <li>Managed App Store and Google Play deployment</li>
+              <li>Added push notifications and secure authentication</li>
+              <li>Optimized performance across devices and screen sizes</li>
+            </ul>
+            <h4>Tech</h4>
+            <p>React Native, .NET Core, SQL Server, TypeScript, Redux, Async Storage</p>
+          </div>
+        </article>
+
+        <!-- B2B ERP -->
+        <article class="card-work spot reveal" data-cat="web">
+          <div class="viz viz-erp" aria-hidden="true">
+            <div class="browser">
+              <div class="br-bar"><i></i><i></i><i></i><span>erp.app/sales/invoices</span></div>
+              <div class="br-body">
+                <ul class="erp-side"><li class="on">Sales</li><li>Purchasing</li><li>Inventory</li><li>Reports</li><li>Setup</li></ul>
+                <div class="erp-main">
+                  <div class="erp-row erp-head"><span>Invoice</span><span>Tax</span><span>Status</span></div>
+                  <div class="erp-row"><span>INV-2041</span><span>GST 18%</span><span class="st ok">Paid</span></div>
+                  <div class="erp-row"><span>INV-2042</span><span>GST + Cess</span><span class="st part">Partial</span></div>
+                  <div class="erp-row"><span>INV-2043</span><span>GST 12%</span><span class="st due">Due</span></div>
+                  <div class="erp-route">
+                    <svg viewBox="0 0 200 50" preserveAspectRatio="none"><path d="M10 40 C50 0 90 50 130 20 S180 10 190 15" fill="none"/></svg>
+                    <span class="truck">🚚</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cw-body">
+            <span class="tile-kicker">Web · Enterprise</span>
+            <h3>B2B ERP with delivery tracking</h3>
+            <p>Upgraded a legacy ERP with modules for sales, purchasing, inventory, reports and setup: invoicing with multiple taxes and partial payments, vendor payments and a smooth data migration.</p>
+            <ul class="tags"><li>React.js</li><li>.NET Core</li><li>SQL Server</li><li>Entity Framework</li><li>C#</li></ul>
+            <button type="button" class="details-btn">View details <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="details" hidden>
+            <h4>Overview</h4>
+            <p>This project upgraded a legacy system by adding modules for Sales, Purchasing, Inventory, Reports and Setup, built around client-specific needs, with a smooth data migration. The system gives businesses real-time tracking and reporting.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Updated customer fields and added email automation</li>
+              <li>Built invoice creation with tax handling and partial payments</li>
+              <li>Integrated vendor data, with partial payments and payment edits</li>
+              <li>Applied multiple taxes and regenerated sales orders when taxes changed</li>
+              <li>Built legacy reports with extra filters for sales and tax data</li>
+              <li>Configured item categories, routes and tax setups</li>
+              <li>Managed the data migration and met the client often for change requests</li>
+            </ul>
+            <h4>Tech</h4>
+            <p>React.js, .NET Core, SQL Server, Entity Framework, JavaScript, C#</p>
+          </div>
+        </article>
+
+        <!-- Booktem -->
+        <article class="card-work spot reveal" data-cat="web">
+          <div class="viz viz-cal" aria-hidden="true">
+            <div class="cal">
+              <div class="cal-head"><b>March</b><span>Week view</span></div>
+              <div class="cal-days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span></div>
+              <div class="cal-grid">
+                <i class="ev e1">Consult ↻</i>
+                <i class="ev e2">Team sync</i>
+                <i class="ev e3">Consult ↻</i>
+                <i class="ev e4">Review</i>
+                <i class="ev e5">Consult ↻</i>
+                <i class="ev e6">Demo</i>
+              </div>
+            </div>
+          </div>
+          <div class="cw-body">
+            <span class="tile-kicker">Web · SaaS</span>
+            <h3>Booktem: appointment scheduling</h3>
+            <p>A scheduling platform for recurring appointments with a calendar view and third-party scheduler integration, built with Clean Architecture and deployed on Azure.</p>
+            <ul class="tags"><li>Angular</li><li>TypeScript</li><li>.NET Core</li><li>LINQ</li><li>SQL Server</li><li>Azure</li></ul>
+            <button type="button" class="details-btn">View details <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="details" hidden>
+            <h4>Overview</h4>
+            <p>Booktem helps businesses schedule and manage recurring appointments, with a calendar view. It follows Clean Architecture for reusable, scalable code, runs on Azure, and uses a third-party scheduler to handle recurring appointments.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Designed and built the backend with .NET Core, LINQ, Entity Framework and SQL to manage recurring appointments</li>
+              <li>Built the responsive UI with Angular, TypeScript, HTML and CSS</li>
+              <li>Wrote unit and integration tests, keeping to Clean Architecture</li>
+              <li>Deployed to Azure and tuned the setup for performance and scale</li>
+            </ul>
+            <h4>Tech</h4>
+            <p>Angular, TypeScript, .NET Core, LINQ, Entity Framework, SQL Server, Azure, HTML, CSS</p>
+          </div>
+        </article>
+      </div>
+
+      <a class="more-link" href="https://github.com/PruthiDevansh" target="_blank" rel="noopener">More on GitHub <span aria-hidden="true">→</span></a>
+    </section>
+
+    <!-- Project details popup -->
+    <dialog class="modal" aria-labelledby="modal-title">
+      <div class="modal-inner">
+        <button class="modal-close" type="button" aria-label="Close">✕</button>
+        <h3 class="modal-title" id="modal-title"></h3>
+        <div class="modal-body"></div>
+      </div>
+    </dialog>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <p class="label reveal">04 / Skills</p>
+      <h2 class="section-title reveal" id="skills-title">The <span class="grad">toolkit.</span></h2>
+
+      <div class="skills">
+        <article class="skill spot reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg>
+          <h3>Backend</h3>
+          <ul class="tags"><li>C#</li><li>.NET Core</li><li>ASP.NET</li><li>REST APIs</li><li>Entity Framework</li><li>LINQ</li></ul>
+        </article>
+        <article class="skill spot reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 6.5h.01M9 6.5h.01"/></svg>
+          <h3>Frontend &amp; mobile</h3>
+          <ul class="tags"><li>React</li><li>React Native</li><li>Angular</li><li>TypeScript</li><li>Redux</li><li>JavaScript</li></ul>
+        </article>
+        <article class="skill spot reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+          <h3>Payments</h3>
+          <ul class="tags"><li>Stripe</li><li>Razorpay</li><li>Authorize.Net</li><li>Swirepay</li><li>Webhooks</li><li>Idempotency</li></ul>
+        </article>
+        <article class="skill spot reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+          <h3>Data, cloud &amp; AI</h3>
+          <ul class="tags"><li>SQL Server</li><li>MySQL</li><li>Azure</li><li>AWS</li><li>Git</li><li>LLM APIs</li></ul>
+        </article>
+      </div>
+
+      <!-- Payment gateways I've integrated (across my career) -->
+      <article class="gateways spot reveal">
+        <div class="gateways-copy">
+          <span class="tile-kicker">Payments experience</span>
+          <h3>4 payment gateways, integrated in .NET.</h3>
+          <p>I've integrated <b>Stripe, Razorpay, Authorize.Net and Swirepay</b> into .NET applications: taking payments, handling refunds and webhooks, and keeping payment status in sync.</p>
+        </div>
+        <figure class="hub" aria-label="Diagram: a .NET application connected to Stripe, Razorpay, Authorize.Net and Swirepay">
+          <svg viewBox="0 0 320 260" aria-hidden="true">
+            <defs>
+              <linearGradient id="hubGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2dd4bf"/><stop offset="0.5" stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/>
+              </linearGradient>
+            </defs>
+            <g class="hub-lines">
+              <path d="M160 130 L60 50"/><path d="M160 130 L260 50"/><path d="M160 130 L60 210"/><path d="M160 130 L260 210"/>
+            </g>
+            <g class="hub-flow">
+              <path d="M160 130 L60 50"/><path d="M260 50 L160 130"/><path d="M160 130 L60 210"/><path d="M260 210 L160 130"/>
+            </g>
+          </svg>
+          <div class="hub-core"><b>.NET</b><small>payments</small></div>
+          <span class="hub-node n1">Stripe</span>
+          <span class="hub-node n2">Razorpay</span>
+          <span class="hub-node n3">Authorize.Net</span>
+          <span class="hub-node n4">Swirepay</span>
+        </figure>
+      </article>
+
+      <ol class="principles">
+        <li class="reveal"><b>Correct before clever.</b> In payments, the boring solution that never loses a transaction wins.</li>
+        <li class="reveal"><b>Own it end to end.</b> From the business problem to the UI to the logs after release.</li>
+        <li class="reveal"><b>Easy to debug.</b> Clear states, useful logs, simple code.</li>
+        <li class="reveal"><b>AI where it helps.</b> A tool to ship faster, with a human in control.</li>
+      </ol>
+    </section>
+
+    <!-- ================= PLAY ================= -->
+    <section class="section container" id="play" aria-labelledby="play-title">
+      <p class="label reveal">05 / Play</p>
+      <h2 class="section-title reveal" id="play-title">Learn about me by <span class="grad">playing.</span></h2>
+
+      <div class="games">
+        <!-- Game 1: Payment Rush (arcade) -->
+        <article class="game spot reveal" aria-labelledby="rush-title">
+          <div class="game-head">
+            <span class="game-icon" aria-hidden="true">💸</span>
+            <div>
+              <h3 id="rush-title">Payment Rush</h3>
+              <p>Catch payments, dodge bugs. Every 5 payments unlocks a fact about me.</p>
+            </div>
+          </div>
+
+          <div class="rush-hud">
+            <span>Score <b class="rush-score">0</b></span>
+            <span>Best <b class="rush-best">0</b></span>
+            <span class="rush-lives" aria-label="3 lives left">❤️❤️❤️</span>
+          </div>
+
+          <div class="rush-stage">
+            <canvas class="rush-canvas" aria-label="Payment Rush game area"></canvas>
+            <div class="rush-overlay">
+              <p class="rush-title">Ready to move some money?</p>
+              <ul class="rush-legend">
+                <li><i class="coin">$</i> Catch payments</li>
+                <li><i>🐞</i> Dodge bugs</li>
+                <li><i>🔑</i> Shield for 5s</li>
+              </ul>
+              <p class="rush-help">Move with your mouse, your finger, or the ← → keys.</p>
+              <div class="rush-btns"><button type="button" class="btn btn-primary rush-start">Start game</button></div>
+            </div>
+            <div class="rush-toast" role="status" aria-live="polite"></div>
+          </div>
+
+          <div class="rush-facts-head"><span>Facts unlocked</span><b class="rush-count">0/8</b></div>
+          <ol class="rush-facts"></ol>
+        </article>
+
+        <!-- Game 2: spot the bug -->
+        <article class="game spot reveal" aria-labelledby="bug-title">
+          <div class="game-head">
+            <span class="game-icon" aria-hidden="true">🐞</span>
+            <div>
+              <h3 id="bug-title">Spot the bug</h3>
+              <p>This code can charge a customer twice. Click the line that causes it.</p>
+            </div>
+          </div>
+          <div class="bug-code" role="group" aria-label="Code lines, click the buggy one"></div>
+          <p class="bug-msg" aria-live="polite">You have 3 tries.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="aurora aurora-contact" aria-hidden="true"><i></i><i></i></div>
+      <div class="container contact-inner">
+        <p class="label reveal">06 / Contact</p>
+        <h2 class="contact-title reveal" id="contact-title">Let's build something <span class="grad">reliable.</span></h2>
+        <p class="contact-sub reveal">Open to full stack and fintech roles where reliability matters, and always happy to talk .NET, React, payments or AI.</p>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary btn-lg magnetic" href="mailto:pruthidevansh@gmail.com">Say hello <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost btn-lg magnetic" href="https://www.linkedin.com/in/devansh-pruthi-79868-08084-software-engineer/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost btn-lg magnetic" href="https://github.com/PruthiDevansh" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <button class="copy-email reveal" type="button" data-email="pruthidevansh@gmail.com">pruthidevansh@gmail.com <span>Copy</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© <span id="year">2026</span> Devansh Pruthi</span>
+    <span><a href="resume.html">Resume</a> · Hand-built with HTML, CSS &amp; JavaScript</span>
+  </footer>
+
+  <canvas class="confetti" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
