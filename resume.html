@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devansh Pruthi · Resume</title>
+  <meta name="description" content="Resume of Devansh Pruthi, full stack engineer (.NET, React, fintech) with 4+ years of experience.">
+  <meta name="theme-color" content="#05070d">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f172a;
+      --text: #334155;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --accent: #0b8a7d;
+      --accent-soft: #e6f6f4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(600px circle at 0% 0%, rgba(45, 212, 191, 0.12), transparent 60%),
+        radial-gradient(600px circle at 100% 100%, rgba(167, 139, 250, 0.12), transparent 60%),
+        #05070d;
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 14px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+
+    /* Toolbar */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 16px;
+      background: rgba(5, 7, 13, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .tb-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      color: #f4f6fb;
+      font: 600 13.5px "Inter", sans-serif;
+      text-decoration: none;
+      cursor: pointer;
+      transition: border-color 0.2s, background-color 0.2s;
+    }
+
+    .tb-btn:hover { border-color: #2dd4bf; }
+
+    .tb-primary {
+      border-color: transparent;
+      background: linear-gradient(110deg, #2dd4bf, #38bdf8 45%, #a78bfa);
+      color: #04121a;
+    }
+
+    .tb-btn:focus-visible { outline: 2px solid #2dd4bf; outline-offset: 3px; }
+
+    /* Paper */
+    .sheet {
+      max-width: 840px;
+      margin: 32px auto 64px;
+      padding: 52px 56px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 40px 100px -30px rgba(0, 0, 0, 0.8);
+    }
+
+    @media (max-width: 700px) {
+      .sheet {
+        margin: 16px 12px 40px;
+        padding: 28px 22px;
+      }
+    }
+
+    header.top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      font-size: 34px;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+
+    .title {
+      margin: 6px 0 0;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .contact {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 13px;
+      text-align: right;
+      color: var(--text);
+    }
+
+    @media (max-width: 700px) {
+      .contact { text-align: left; }
+    }
+
+    .contact a { text-decoration: none; }
+    .contact a:hover { color: var(--accent); }
+
+    section { margin-top: 22px; }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    p { margin: 0; }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 5px 16px;
+      margin: 0;
+    }
+
+    @media (max-width: 560px) {
+      .skills { grid-template-columns: 1fr; }
+      .skills dd { margin-bottom: 6px; }
+    }
+
+    .skills dt { font-weight: 600; color: var(--ink); }
+    .skills dd { margin: 0; }
+
+    .job + .job { margin-top: 16px; }
+
+    .job-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2px 12px;
+    }
+
+    .job-head h3 {
+      margin: 0;
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    .job-head h3 span { font-weight: 500; color: var(--text); }
+
+    .date {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .job-sub {
+      margin-top: 1px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    ul.bullets {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+
+    ul.bullets li { margin-bottom: 4px; }
+    ul.bullets b { color: var(--ink); }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 24px;
+    }
+
+    @media (max-width: 560px) {
+      .projects { grid-template-columns: 1fr; }
+    }
+
+    .projects h3 {
+      margin: 0;
+      font-size: 14px;
+      color: var(--ink);
+    }
+
+    .projects p { margin-top: 2px; }
+
+    .stack {
+      display: block;
+      margin-top: 3px;
+      font-size: 12px;
+      color: var(--accent);
+    }
+
+    .note {
+      margin: 0 auto 40px;
+      max-width: 840px;
+      padding: 0 16px;
+      text-align: center;
+      font-size: 13px;
+      color: #687389;
+    }
+
+    .note a { color: #2dd4bf; }
+
+    /* Print: just the paper */
+    @page { size: A4; margin: 12mm; }
+
+    @media print {
+      body { background: #fff; font-size: 12.5px; }
+      .toolbar, .note { display: none; }
+      .sheet { margin: 0; padding: 0; max-width: none; box-shadow: none; }
+      a { text-decoration: none; }
+      .job, .projects > div { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="toolbar" aria-label="Resume actions">
+    <a class="tb-btn" href="index.html#top">← Interactive portfolio</a>
+    <a class="tb-btn" href="index.html#play">🎮 Play: Payment Rush</a>
+    <button class="tb-btn tb-primary" type="button" onclick="window.print()">⬇ Save as PDF</button>
+  </nav>
+
+  <article class="sheet">
+    <header class="top">
+      <div>
+        <h1>Devansh Pruthi</h1>
+        <p class="title">Full Stack Engineer · .NET · React · Fintech</p>
+      </div>
+      <ul class="contact">
+        <li>Mohali, India · Open to remote</li>
+        <li><a href="mailto:pruthidevansh@gmail.com">pruthidevansh@gmail.com</a> · <a href="tel:+917986808084">+91 798 680 8084</a></li>
+        <li><a href="https://www.linkedin.com/in/devansh-pruthi-79868-08084-software-engineer/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/PruthiDevansh" target="_blank" rel="noopener">github.com/PruthiDevansh</a></li>
+      </ul>
+    </header>
+
+    <section aria-labelledby="summary">
+      <h2 id="summary">Summary</h2>
+      <p>Full stack engineer with <b>4+ years</b> of experience building web and mobile products with .NET Core, C#, React, React Native and Angular. Currently at <b>Instarails</b>, a fintech startup that moves money internationally. Experienced in integrating payment gateways (<b>Stripe, Razorpay, Authorize.Net, Swirepay</b>) in .NET. Careful about correctness: idempotent APIs, safe retries and clear transaction states.</p>
+    </section>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Skills</h2>
+      <dl class="skills">
+        <dt>Backend</dt><dd>C#, .NET Core, ASP.NET, REST APIs, Entity Framework, LINQ</dd>
+        <dt>Frontend &amp; mobile</dt><dd>React, React Native, Angular, TypeScript, JavaScript, Redux, HTML, CSS</dd>
+        <dt>Payments</dt><dd>Stripe, Razorpay, Authorize.Net, Swirepay, webhooks, refunds, idempotency</dd>
+        <dt>Data &amp; cloud</dt><dd>SQL Server, MySQL, Azure, AWS, Git</dd>
+        <dt>AI</dt><dd>Gemini API, LLM-powered agents</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="experience">
+      <h2 id="experience">Experience</h2>
+
+      <!-- TODO: add your start date, e.g. "Mar 2025 – Present", and what you build at Instarails -->
+      <div class="job">
+        <div class="job-head">
+          <h3>Full Stack Engineer <span>· Instarails</span></h3>
+          <span class="date">Present</span>
+        </div>
+        <p class="job-sub">Fintech startup moving money internationally</p>
+        <ul class="bullets">
+          <li>Build full stack features for a cross-border payments platform, from .NET Core APIs and data models to React screens.</li>
+          <li>Design for correctness in money movement: idempotent APIs, safe retries and clear transaction states.</li>
+        </ul>
+      </div>
+
+      <!-- TODO: add the end date, e.g. "Jan 2023 – Feb 2025" -->
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Engineer <span>· GiniLytics IT Solutions</span></h3>
+          <span class="date">From Jan 2023</span>
+        </div>
+        <p class="job-sub">Mohali, Punjab</p>
+        <ul class="bullets">
+          <li>Built and maintained scalable web applications with React.js and .NET Core, focusing on performance and user experience.</li>
+          <li>Developed, verified and shipped change requests across front-end and back-end; met clients regularly to shape them.</li>
+          <li>Analyzed and resolved issues in requirements and designs, and tested thoroughly to improve reliability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">Projects</h2>
+      <div class="projects">
+        <div>
+          <h3>MetricHub: mobile analytics</h3>
+          <p>Cross-platform app for real-time business metrics with offline sync, live dashboards and push notifications. Shipped to both app stores.</p>
+          <span class="stack">React Native · .NET Core · SQL Server · Redux</span>
+        </div>
+        <div>
+          <h3>B2B ERP with delivery tracking</h3>
+          <p>Upgraded a legacy ERP: sales, purchasing, inventory and reports; invoices with multiple taxes and partial payments; data migration.</p>
+          <span class="stack">React.js · .NET Core · SQL Server · Entity Framework</span>
+        </div>
+        <div>
+          <h3>Booktem: appointment scheduling</h3>
+          <p>Recurring appointments with a calendar view and third-party scheduler, built with Clean Architecture and deployed on Azure.</p>
+          <span class="stack">Angular · .NET Core · LINQ · SQL Server · Azure</span>
+        </div>
+        <div>
+          <h3>LinkedIn AI Agent</h3>
+          <p>Finds trending news, drafts posts in my voice with Gemini, and publishes to LinkedIn only after I approve on Telegram.</p>
+          <span class="stack">Next.js · TypeScript · Gemini API · Telegram Bot API</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO: add your university and graduation year -->
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <div class="job-head">
+        <h3 style="margin:0;font-size:15px;color:var(--ink)">Bachelor's degree in Computer Science</h3>
+      </div>
+    </section>
+  </article>
+
+  <p class="note">Prefer the full experience? <a href="index.html#top">Open the interactive portfolio</a>.</p>
+</body>
+</html>
