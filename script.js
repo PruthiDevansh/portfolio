@@ -216,6 +216,7 @@
   const typed = document.querySelector(".typed");
   const phrases = [
     "payment APIs that never double-charge.",
+    ".NET microservices that move money across borders.",
     "React dashboards for fintech teams.",
     "full stack features, end to end.",
     "AI agents that actually ship.",
@@ -501,8 +502,8 @@
   // Move the .NET wallet to catch falling payments and dodge bugs.
   // Every 5 payments unlocks a fact about me.
   const FACTS = [
-    "I'm a full stack engineer with 4+ years of experience.",
-    "I work at Instarails, a fintech startup that moves money internationally.",
+    "I'm a full stack developer with nearly 4 years of experience and an MCA.",
+    "I build the web apps and .NET microservices behind Instarails, a cross-border B2B payments platform.",
     "I've integrated Stripe, Razorpay, Authorize.Net and Swirepay in .NET.",
     "I shipped MetricHub to both the App Store and Google Play.",
     "On the frontend I build with React, React Native and Angular.",

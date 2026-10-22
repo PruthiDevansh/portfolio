@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Devansh Pruthi · Resume</title>
-  <meta name="description" content="Resume of Devansh Pruthi, full stack engineer (.NET, React, fintech) with 4+ years of experience.">
+  <meta name="description" content="Resume of Devansh Pruthi, full stack developer (.NET, React, fintech) with nearly 4 years of experience.">
   <meta name="theme-color" content="#05070d">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -268,22 +268,22 @@
       <ul class="contact">
         <li>Mohali, India · Open to remote</li>
         <li><a href="mailto:pruthidevansh@gmail.com">pruthidevansh@gmail.com</a> · <a href="tel:+917986808084">+91 798 680 8084</a></li>
-        <li><a href="https://www.linkedin.com/in/devansh-pruthi-79868-08084-software-engineer/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/PruthiDevansh" target="_blank" rel="noopener">github.com/PruthiDevansh</a></li>
+        <li><a href="https://www.linkedin.com/in/devansh-pruthi/" target="_blank" rel="noopener">linkedin.com/in/devansh-pruthi</a> · <a href="https://github.com/PruthiDevansh" target="_blank" rel="noopener">github.com/PruthiDevansh</a></li>
       </ul>
     </header>
 
     <section aria-labelledby="summary">
       <h2 id="summary">Summary</h2>
-      <p>Full stack engineer with <b>4+ years</b> of experience building web and mobile products with .NET Core, C#, React, React Native and Angular. Currently at <b>Instarails</b>, a fintech startup that moves money internationally. Experienced in integrating payment gateways (<b>Stripe, Razorpay, Authorize.Net, Swirepay</b>) in .NET. Careful about correctness: idempotent APIs, safe retries and clear transaction states.</p>
+      <p>Full stack developer with <b>nearly 4 years</b> of experience building web and mobile products with ASP.NET Core, C#, React, React Native and Angular. Currently at <b>Instarails</b>, a cross-border B2B payments platform, building React web apps and the .NET microservices behind them: payments, FX quotes, invoicing, compliance checks and notifications. Experienced in integrating payment gateways (<b>Stripe, Razorpay, Authorize.Net, Swirepay</b>) in .NET. Careful about correctness: idempotent APIs, safe retries and clear transaction states.</p>
     </section>
 
     <section aria-labelledby="skills">
       <h2 id="skills">Skills</h2>
       <dl class="skills">
-        <dt>Backend</dt><dd>C#, .NET Core, ASP.NET, REST APIs, Entity Framework, LINQ</dd>
+        <dt>Backend</dt><dd>C#, ASP.NET Core, Web API, Microservices, gRPC, Entity Framework, LINQ, Hangfire</dd>
         <dt>Frontend &amp; mobile</dt><dd>React, React Native, Angular, TypeScript, JavaScript, Redux, HTML, CSS</dd>
         <dt>Payments</dt><dd>Stripe, Razorpay, Authorize.Net, Swirepay, webhooks, refunds, idempotency</dd>
-        <dt>Data &amp; cloud</dt><dd>SQL Server, MySQL, Azure, AWS, Git</dd>
+        <dt>Data &amp; cloud</dt><dd>SQL Server, MySQL, Redis, Azure, AWS, Git</dd>
         <dt>AI</dt><dd>Gemini API, LLM-powered agents</dd>
       </dl>
     </section>
@@ -291,30 +291,42 @@
     <section aria-labelledby="experience">
       <h2 id="experience">Experience</h2>
 
-      <!-- TODO: add your start date, e.g. "Mar 2025 – Present", and what you build at Instarails -->
       <div class="job">
         <div class="job-head">
-          <h3>Full Stack Engineer <span>· Instarails</span></h3>
-          <span class="date">Present</span>
+          <h3>Full Stack Developer <span>· Instarails</span></h3>
+          <span class="date">Feb 2026 – Present</span>
         </div>
-        <p class="job-sub">Fintech startup moving money internationally</p>
+        <p class="job-sub">Cross-border B2B payments platform: international payments, FX quotes, invoicing and payouts</p>
         <ul class="bullets">
-          <li>Build full stack features for a cross-border payments platform, from .NET Core APIs and data models to React screens.</li>
-          <li>Design for correctness in money movement: idempotent APIs, safe retries and clear transaction states.</li>
+          <li>Build customer-facing and internal web apps in React and TypeScript, and the ASP.NET Core microservices behind them.</li>
+          <li>Integrated a third-party payment provider end to end: payment sessions, signed webhooks, forward-only status updates and payout tracking.</li>
+          <li>Built compliance checks into the payment pipeline (Redis caching, automated alerts) and partner-specific FX quotes with scheduled rate refresh (Hangfire).</li>
+          <li>Built a multi-channel notification service and gRPC services between microservices; hardened security after penetration tests and automated scans.</li>
         </ul>
       </div>
 
-      <!-- TODO: add the end date, e.g. "Jan 2023 – Feb 2025" -->
+      <div class="job">
+        <div class="job-head">
+          <h3>.NET Developer <span>· Instarails</span></h3>
+          <span class="date">Sep 2025 – Feb 2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Built the invoicing service in ASP.NET Core: invoice and credit-note PDFs, role-based status workflows, email notifications and reminder jobs.</li>
+          <li>Built ASP.NET Core Web APIs, SQL Server data layers and gRPC endpoints for payment and payout workflows.</li>
+        </ul>
+      </div>
+
       <div class="job">
         <div class="job-head">
           <h3>Software Engineer <span>· GiniLytics IT Solutions</span></h3>
-          <span class="date">From Jan 2023</span>
+          <span class="date">Dec 2024 – Sep 2025</span>
         </div>
-        <p class="job-sub">Mohali, Punjab</p>
+        <p class="job-sub">Mohali, Punjab · Promoted from Intern (Jan 2023) and Junior Software Engineer (Sep 2023 – Dec 2024)</p>
         <ul class="bullets">
-          <li>Built and maintained scalable web applications with React.js and .NET Core, focusing on performance and user experience.</li>
-          <li>Developed, verified and shipped change requests across front-end and back-end; met clients regularly to shape them.</li>
-          <li>Analyzed and resolved issues in requirements and designs, and tested thoroughly to improve reliability.</li>
+          <li>Modernized a legacy B2B ERP (React, .NET Core, Entity Framework): sales, purchasing, inventory, multi-tax invoicing, partial payments and data migration.</li>
+          <li>Integrated Stripe, Razorpay and Authorize.Net into .NET applications: payments, refunds and webhooks.</li>
+          <li>As Junior Software Engineer, built the Booktem scheduling SaaS (Angular, .NET Core, Azure) and the MetricHub React Native app shipped to both app stores.</li>
+          <li>Met clients regularly to scope change requests and delivered them across frontend and backend.</li>
         </ul>
       </div>
     </section>
@@ -345,11 +357,19 @@
       </div>
     </section>
 
-    <!-- TODO: add your university and graduation year -->
     <section aria-labelledby="education">
       <h2 id="education">Education</h2>
-      <div class="job-head">
-        <h3 style="margin:0;font-size:15px;color:var(--ink)">Bachelor's degree in Computer Science</h3>
+      <div class="job">
+        <div class="job-head">
+          <h3>Master of Computer Applications (MCA) <span>· Chandigarh University</span></h3>
+          <span class="date">2023 – 2025</span>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job-head">
+          <h3>Bachelor of Computer Applications (BCA) <span>· Tilak Raj Chadha Institute of Management &amp; Technology</span></h3>
+          <span class="date">2020 – 2023</span>
+        </div>
       </div>
     </section>
   </article>
