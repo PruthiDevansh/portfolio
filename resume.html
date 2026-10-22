@@ -115,6 +115,31 @@
       color: var(--ink);
     }
 
+    .who {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* Zoomed in on the face so it reads at 76px */
+    .avatar {
+      width: 76px;
+      height: 76px;
+      flex: none;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 2px solid var(--accent-soft);
+    }
+
+    .avatar img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.9);
+      transform-origin: 56% 27%;
+    }
+
     .title {
       margin: 6px 0 0;
       font-size: 15px;
@@ -261,9 +286,12 @@
 
   <article class="sheet">
     <header class="top">
-      <div>
+      <div class="who">
+        <span class="avatar"><img src="assets/devansh-pruthi.webp" alt="Devansh Pruthi" width="76" height="76"></span>
+        <div>
         <h1>Devansh Pruthi</h1>
         <p class="title">Full Stack Engineer · .NET · React · Fintech</p>
+        </div>
       </div>
       <ul class="contact">
         <li>Mohali, India · Open to remote</li>
